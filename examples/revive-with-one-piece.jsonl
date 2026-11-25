@@ -1,0 +1,13 @@
+{"at":0,"kind":"disk","record":{"disk":"a","domain":"X","free":20}}
+{"at":0,"kind":"disk","record":{"disk":"b","domain":"Y","free":20}}
+{"at":0,"kind":"disk","record":{"disk":"c","domain":"Z","free":20}}
+{"at":0,"kind":"object","record":{"key":"log","rev":1,"bytes":"10203040"}}
+{"at":1,"kind":"piece","record":{"key":"log","rev":1,"layout":1,"index":0,"disk":"a","hex":"1020"}}
+{"at":1,"kind":"piece","record":{"key":"log","rev":1,"layout":1,"index":1,"disk":"b","hex":"3040"}}
+{"at":1,"kind":"piece","record":{"key":"log","rev":1,"layout":1,"index":2,"disk":"c","hex":"2060"}}
+{"at":2,"kind":"finish","record":{"key":"log","rev":1,"layout":1}}
+{"at":3,"kind":"fault","record":{"disk":"a"}}
+{"at":4,"kind":"read","record":{"holder":"first","key":"log","rev":1,"layout":1}}
+{"at":5,"kind":"fault","record":{"disk":"b"}}
+{"at":6,"kind":"read","record":{"holder":"lost","key":"log","rev":1,"layout":1}}
+{"at":7,"kind":"inspect","record":{"key":"log"}}

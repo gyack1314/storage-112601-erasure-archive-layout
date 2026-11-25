@@ -1,0 +1,13 @@
+[
+  "disk",
+  "fault",
+  "finish",
+  "inspect",
+  "move",
+  "object",
+  "piece",
+  "read",
+  "release",
+  "restart",
+  "retire"
+]
