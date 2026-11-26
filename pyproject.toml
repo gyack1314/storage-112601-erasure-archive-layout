@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cold-archive"
+version = "0.1.0"
+description = "2+1 XOR 冷归档：本地盘仿真、版本化分片、修复与布局迁移"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cold-archive = "cold_archive.cli:main"
+
+[tool.setuptools]
+packages = ["cold_archive"]
